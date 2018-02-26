@@ -1,0 +1,39 @@
+#include<map>
+#include<iostream>
+#include<map>
+#include<iterator>
+using namespace std;
+class Graph{
+private:
+    map<int,int>ID;//Stores the link number : a link number will tell whether two nodes have a path or not.
+public:
+    void join(int a,int b){//Method which join two nodes
+        if(ID.find(a) == ID.end() and ID.find(b) == ID.end()){
+            ID[a] = a;
+            ID[b] = ID[a];
+        }
+        else if(ID.find(a) != ID.end() and ID.find(b) == ID.end()){
+            ID[b] = ID[a];
+        }
+        else if(ID.find(a) == ID.end() and ID.find(b) != ID.end()){
+            ID[a] = ID[b];
+        }
+        else{
+            map<int,int>::iterator it;
+            for(it = ID.begin();it != ID.end();it++){
+                if(it->second == ID[b])
+                    it->second = ID[a];
+            }
+        }
+    }
+    bool isConnected(int a,int b){
+        return ID[a] == ID[b];
+    }
+    void DisplayAll(){
+        map<int,int>::iterator it;
+        for(it = ID.begin();it != ID.end();it++){
+            cout<<it->first<<'\t'<<it->second<<'\n';
+        }
+    }
+};
+
