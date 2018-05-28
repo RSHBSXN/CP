@@ -3,7 +3,6 @@
 #include <string>
 #include <algorithm>
 using namespace std;
-//int &viraj = abhiraj;
 void facto(int n,vector<int> &digs){
     for(int i=1;i<=n;i++){
         if(i == 1){
@@ -23,14 +22,9 @@ void facto(int n,vector<int> &digs){
                 carr /= 10;
             }
             
-            //cout<<endl;
         }
     }
-    /*for(int c : digs){
-                cout<<c<<' ';
-            }
-            cout<<endl;
-*/}
+}
 string factorial(int factorial){
     vector<int>Digs;
     facto(factorial,Digs);
@@ -42,7 +36,7 @@ string factorial(int factorial){
     return result;
 }
 
-int main(){
+int main(int argc,int argv){
     int num;
     cin>>num;
     cout<<factorial(num);
