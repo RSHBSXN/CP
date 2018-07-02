@@ -1,3 +1,14 @@
+/*
+    To find the peak number using DnC we split the array into two parts and the index which we are currently on, check whether that is in
+    increasing portion or decreasing portion.
+    if middle is in increasing portion then the peak is on right hand side of array
+    if middle is in decreasing portion then the peak is on left hand side of the array
+    if the middle is greater the middle -1 and middle +1 then middle is the peak
+    Corner cases:
+        array might consist of only decreasing and increasing elements
+        for that case we check on both sides whether those numbers are greater then its corresponding part.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;
