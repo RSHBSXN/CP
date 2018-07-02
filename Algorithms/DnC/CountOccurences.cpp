@@ -1,3 +1,8 @@
+/*
+    basic idea is to first find the element using binary search, than using that index find the index of the number which is just less 
+    than asked number and the number which is just greater than the asked number using that we can subtract the differences of indices 
+    by 1 to get the count.
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
