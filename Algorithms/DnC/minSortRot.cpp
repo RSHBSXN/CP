@@ -1,5 +1,12 @@
 /*
- * find the minimun element in sorted and rotated array
+ *  to find the minimun element in sorted and rotated array:
+ *  we split the array in two, the by which the array is splitted check that:
+ *  if middle is greater than last element min is present on the right side
+ *  if middle is less than the last element min is present on the left side
+ *  if middle - 1 number is greater then middle then middle is min
+ *  Corner Case:
+ *      if middle is zero then array is not rotated
+ *      if middle is size - 1 then next is 0     
  */
 #include <iostream>
 #include <vector>
