@@ -1,0 +1,8 @@
+
+07.https://leetcode.com/problems/fibonacci-number/
+08.https://practice.geeksforgeeks.org/problems/factorial/0
+09.https://leetcode.com/problems/powx-n/
+10.https://leetcode.com/problems/subsets/
+11.https://leetcode.com/problems/permutations/
+12.https://www.interviewbit.com/problems/combination-sum-ii/
+13.https://www.interviewbit.com/problems/combination-sum/
